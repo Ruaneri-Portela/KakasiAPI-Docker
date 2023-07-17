@@ -1,4 +1,4 @@
-# KakasiAPI-Docker
+# KakasiAPI-Docker α
 Kakasi HTTP API on Docker
 
 This is the API using the KAKASI software in http made especially for RfAM, it is basically a communicator between http and the program compiled in C.
