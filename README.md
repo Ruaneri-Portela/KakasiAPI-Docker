@@ -1,8 +1,9 @@
 # KakasiAPI-Docker α
-The API is available at https://romanization.hirameki.me/ using a POST on =input, test with 'curl -X POST -d "input=と潮水呑み込んで" https://romanization.hirameki.me/'
+The API is available at https://romanization.hirameki.me/ using a POST on =input, test with 'curl -X POST -d "input=今日は美しい朝だ！" https://romanization.hirameki.me/'
+Will return "konnichiha utsukushi i asa da !"
 
-A API está disponivel em https://romanization.hirameki.me/ usando um POST em =input, teste com 'curl -X POST -d "input=と潮水呑み込んで" https://romanization.hirameki.me/'
-
+A API está disponivel em https://romanization.hirameki.me/ usando um POST em =input, teste com 'curl -X POST -d "input=今日は美しい朝だ！" https://romanization.hirameki.me/'
+Vai retornar "konnichiha utsukushi i asa da !"
 
 -----------------------
 Kakasi HTTP API on Docker
@@ -17,7 +18,7 @@ To import this image -> "cat archive.tar |docker import - kakasidocker"
 To activate the container -> "docker run -d -u 1000 --name kakasidocker_backend kakasidockerstart.sh prod"
 To activate the API -> "docker start kakasidocker_backend"
 
-After that you can give CURL using a POST to get the conversion -> "curl -X POST -d "input=と潮水呑み込んで" http://[DOCKER IP]/convert"
+After that you can give CURL using a POST to get the conversion -> "curl -X POST -d "input=今日は美しい朝だ！" http://[DOCKER IP]/convert"
 
 Extra -> You can check your IP using "docker exec kakasidocker_backend ip a"
 
@@ -32,6 +33,6 @@ Para importar essa imagem -> "cat arquivo.tar |docker import - kakasidocker"
 Para ativar o container -> "docker run -d -u 1000 --name kakasidocker_backend kakasidockerstart.sh prod"
 Para ativar a API -> "docker start kakasidocker_backend "
 
-Após isso você pode dar o CURL usando um POST para obter a conversão -> "curl -X POST -d "input=と潮水呑み込んで" http://[IP DO DOCKER]/convert"
+Após isso você pode dar o CURL usando um POST para obter a conversão -> "curl -X POST -d "input=今日は美しい朝だ！" http://[IP DO DOCKER]/convert"
 
 Extra -> Você pode checar seu IP usando  "docker exec kakasidocker_backend ip a"
